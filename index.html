@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Rick and Morty</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html">
+        <img src="assets/logo.svg" alt="Rick and Morty" />
+      </a>
+    </header>
+
+    <main class="main">
+      <section class="filters">
+        <div>
+          <label for="input-character-search">
+            <h2>Encontre seu personagem favorito</h2>
+          </label>
+          <div class="input-character-search-group">
+            <img src="assets/search.svg" alt="Lupa de pesquisa" />
+            <input
+              type="text"
+              id="input-character-search"
+              name="input-character-search"
+              placeholder="Pesquise pelo nome do personagem"
+            />
+          </div>
+        </div>
+        <div class="tags-group">
+          <h2>Selecione tag(s) de sua escolha</h2>
+          <ul class="list-tags">
+            <li class="item-tag">
+              <button type="button">
+                Vivo
+                <img src="assets/plus.svg" alt="Adicionar">
+              </button>
+            </li>
+            <li class="item-tag">
+              <button type="button">
+                Morto
+                <img src="assets/plus.svg" alt="Adicionar">
+              </button>
+            </li>
+            <li class="item-tag">
+              <button type="button">
+                Homem
+                <img src="assets/plus.svg" alt="Adicionar">
+              </button>
+            </li>
+            <li class="item-tag">
+              <button type="button">
+                Mulher
+                <img src="assets/plus.svg" alt="Adicionar">
+              </button>
+            </li>
+            <li class="item-tag">
+              <button type="button">
+                Humano
+                <img src="assets/plus.svg" alt="Adicionar">
+              </button>
+            </li>
+            <li class="item-tag">
+              <button type="button">
+                Alien
+                <img src="assets/plus.svg" alt="Adicionar">
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="characters">
+        <ul class="list-characters">
+        </ul>
+      </section>
+    </main>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

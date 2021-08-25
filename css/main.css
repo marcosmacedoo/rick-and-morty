@@ -1,0 +1,251 @@
+/* =============== HEADER =============== */
+.header {
+  padding: 0.8rem;
+  background: var(--white-light);
+  border-bottom: 1px solid var(--gray-8);
+  display: grid;
+  place-content: center;
+}
+
+.header a img {
+  width: 20rem;
+  height: 6.2rem;
+  object-fit: cover;
+}
+
+
+/* =============== MAIN =============== */
+.main {
+  flex: 1;
+  margin: 5.6rem 23rem 0 23rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 3.2rem;
+}
+
+
+/* =============== FILTERS =============== */
+.filters {
+  grid-column: 4 / 10;
+}
+
+.input-character-search-group {
+  margin-top: 1.6rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-character-search-group img {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 2.4rem;
+  color: var(--gray-6);
+}
+
+#input-character-search {
+  padding: 2.1rem 2.4rem 2.1rem 6.2rem;
+  width: 100%;
+  border: 1px solid var(--gray-8);
+  border-radius: 4px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  transition: border 0.2s;
+}
+
+#input-character-search::placeholder {
+  color: var(--gray-7);
+}
+
+#input-character-search:hover {
+  border: 1px solid var(--gray-5);
+}
+
+#input-character-search:focus {
+  border: 1px solid var(--primary-dark);
+  color: var(--gray-3);
+}
+
+.tags-group {
+  margin-top: 3.2rem;
+}
+
+.list-tags {
+  margin-top: 1.6rem;
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item-tag {
+  background: var(--white-light);
+  border: 1px solid var(--gray-8);
+  border-radius: 0.4rem;
+  transition: border 0.2s;
+}
+
+.item-tag:hover {
+  border: 1px solid var(--gray-1);
+}
+
+.item-tag button {
+  padding: 1rem 1.6rem;
+  width: 100%;
+  height: 100%;
+  font-size: 1.4rem;
+  color: var(--gray-1);
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-tag button img {
+  width: 1.4rem;
+  height: 1.4rem;
+  color: var(--gray-1);
+}
+
+
+/* =============== Characters =============== */
+.characters {
+  margin: 6.4rem 0 3rem 0;
+  grid-column: span 13;
+}
+
+.list-characters {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.item-character {
+  max-width: 22rem;
+  width: 100%;
+  height: auto;
+}
+
+.item-character button, .item-character .card-character {
+  width: 100%;
+  height: 100%;
+}
+
+.card-character {
+  padding: 2.4rem 3.2rem;
+  background: var(--white-light);
+  border: 1px solid var(--gray-8);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: center;
+  transition: transform 0.2s linear;
+}
+
+.card-character:hover {
+  border: 1px solid var(--gray-1);
+  transform: scale(1.02);
+}
+
+.card-character img {
+  height: 100%;
+  width: 15rem;
+  border-radius: 0.4rem;
+}
+
+.card-character h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--gray-1);
+}
+
+
+/* =============== MEDIAS QUERIES =============== */
+@media (max-width: 1530px) {
+  .filters {
+    grid-column: 3 / 12;
+  }
+}
+
+@media (max-width: 1200px) {
+  .filters {
+    grid-column: span 13;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main {
+    margin: 5.6rem 15rem 0 15rem;
+  }
+
+  .list-characters {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 766px) {
+  html {
+    font-size: 55%;
+  }
+
+  .main {
+    margin: 5.6rem 8rem 0 8rem;
+  }
+}
+
+@media (max-width: 596px) {
+  .main {
+    margin: 4.6rem 4rem 0 4rem;
+  }
+}
+
+@media (max-width: 483px) {
+  html {
+    font-size: 50%;
+  }
+
+  .item-character {
+    width: 23rem;
+    height: 100%;
+  }
+
+  .card-character img {
+    width: 100%;
+  }
+
+  .item-tag button {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 477px) {
+  .list-characters {
+    justify-content: space-between;
+  }
+
+  .item-character {
+    width: 45%;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 47%;
+  }
+
+  .main {
+    margin: 3rem 2rem 0 2rem;
+  }
+
+  .item-character {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .card-character h3 {
+    font-size: 2.5rem;
+  }
+}

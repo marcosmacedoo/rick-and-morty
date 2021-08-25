@@ -1,0 +1,62 @@
+:root {
+  --primary: #2AD6F6;
+  --primary-dark: #1E6375;
+  --primary-light: #64E8F8;
+  --secondary: #FFD775;
+  --secondary-dark: #EDCE6D;
+  --secondary-light: #FFE88D;
+  --white: #F7FBFC;
+  --white-dark: #F2F7F7;
+  --white-light: #F9FBFC;
+  --black: #252A2B;
+  --black-dark: #0F1212;
+  --black-light: #353C3D;
+  --gray-1: #3E3F40;
+  --gray-2: #4D4F4F;
+  --gray-3: #5E6161;
+  --gray-4: #6D7070;
+  --gray-5: #7A7F80;
+  --gray-6: #898E8F;
+  --gray-7: #A2AAAB;
+  --gray-8: #C2CACC;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Sora', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  background: var(--white-dark);
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--black-light);
+}
+
+input, button {
+  border: 0;
+  outline: 0;
+  font-family: 'Sora', sans-serif;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
